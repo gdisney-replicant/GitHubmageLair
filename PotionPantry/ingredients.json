@@ -1,0 +1,7 @@
+{
+  "potions": {
+    "Health Elixir": ["Healing Herb", "Glowing Mushroom", "Purified Water"],
+    "Invisibility Potion": ["Moonstone Dust", "Essence of Shadow", "Ghost Orchid"],
+    "Strength Tonic": ["Giant's Toe", "Dragon Scale", "Phoenix Feather"]
+  }
+}

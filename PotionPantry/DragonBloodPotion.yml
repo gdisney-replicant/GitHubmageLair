@@ -1,0 +1,13 @@
+# Dragon Blood Potion Configuration
+
+potion:
+  name: Dragon's Breath Elixir
+  ingredients:
+    - Dragon Blood
+    - Nimbus Cloud Essence
+    - Phoenix Feather
+  duration: 120 minutes
+  effects:
+    - Grants temporary immunity to fire-based attacks
+    - Enhances agility and reflexes
+    - Provides a surge of energy, increasing spell potency by 50%

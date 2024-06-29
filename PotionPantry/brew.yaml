@@ -1,0 +1,12 @@
+# Brew Configuration
+
+potion:
+  name: Mana Elixir
+  ingredients:
+    - Essence of Energy
+    - Mystic Herbs
+    - Sparkling Dew
+  duration: 60 minutes
+  effects:
+    - Restores 100 mana points
+    - Increases spellcasting efficiency by 20%

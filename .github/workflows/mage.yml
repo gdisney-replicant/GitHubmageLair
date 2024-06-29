@@ -1,0 +1,50 @@
+name: Build Mage Go Code
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.22.4
+      - name: Build Mage Go code
+        run: |
+          cd src
+          LD_FLAGS="-X main.answer1=${{ secrets.ANSWER1 }}"
+          LD_FLAGS+=" -X main.answer2=${{ secrets.ANSWER2 }}"
+          LD_FLAGS+=" -X main.answer3=${{ secrets.ANSWER3 }}"
+          LD_FLAGS+=" -X main.answer4=${{ secrets.ANSWER4 }}"
+          LD_FLAGS+=" -X main.answer5=${{ secrets.ANSWER5 }}"
+          LD_FLAGS+=" -X main.answer6=${{ secrets.ANSWER6 }}"
+          LD_FLAGS+=" -X main.answer7=${{ secrets.ANSWER7 }}"
+          LD_FLAGS+=" -X main.answer8=${{ secrets.ANSWER8 }}"
+          LD_FLAGS+=" -X main.answer9=${{ secrets.ANSWER9 }}"
+          LD_FLAGS+=" -X main.answer10=${{ secrets.ANSWER10 }}"
+          LD_FLAGS+=" -X main.answer11=${{ secrets.ANSWER11 }}"
+          LD_FLAGS+=" -X main.answer12=${{ secrets.ANSWER12 }}"
+          LD_FLAGS+=" -X main.answer13=${{ secrets.ANSWER13 }}"
+          LD_FLAGS+=" -X main.answer14=${{ secrets.ANSWER14 }}"
+          LD_FLAGS+=" -X main.answer15=${{ secrets.ANSWER15 }}"
+          LD_FLAGS+=" -X main.flag=${{ secrets.FLAG }}"
+          go build -ldflags "$LD_FLAGS" -o mage main.go
+        shell: bash
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+      - name: Upload to Artifact Registry
+        run: |
+          gcloud artifacts generic upload --location=us-west1 --repository=githubmagelair-mage-repo --source=src/mage --package=mage-binary-linux-x64 --version=$GITHUB_SHA

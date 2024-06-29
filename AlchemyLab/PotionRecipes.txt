@@ -1,0 +1,27 @@
+# Potion Recipes
+
+## Healing Elixir
+Ingredients:
+- Mandrake Root
+- Unicorn Tears
+- Phoenix Feather
+
+Instructions:
+1. Grind mandrake root into a fine powder.
+2. Mix mandrake powder with unicorn tears in a cauldron.
+3. Heat the mixture over a low flame until it simmers.
+4. Add a phoenix feather for potency.
+5. Allow the elixir to cool before bottling.
+
+## Potion of Invisibility
+Ingredients:
+- Moonstone Dust
+- Essence of Shadow
+- Ghost Orchid
+
+Instructions:
+1. Grind moonstone dust into a fine powder.
+2. Combine moonstone powder with essence of shadow in a silver cauldron.
+3. Stir the mixture clockwise under the light of a new moon.
+4. Add ghost orchid petals for concealment.
+5. Bottle the potion in a light-proof container for maximum effect.
