@@ -12,13 +12,17 @@ GitHubmageLair is a repository dedicated to exploring the intersection of coding
 - **PotionPantry**: Contains configuration files or settings related to project dependencies, symbolizing the GitHubmage's potion-making prowess in managing libraries and dependencies.
 - **CrystalBall**: Stores predictive analytics or machine learning models, representing GitHubmages' attempts to foresee and mitigate future coding challenges.
 - **Dragon's Den**: Houses scripts or files related to enchantments or magical enhancements applied to the codebase, such as build scripts or automation tools.
-- **ArtifactArchive**: Stores artifacts or magical relics related to the project, such as images, diagrams, or documentation. This includes the crucial secret file svc-githubmagelair.json for sending the mage to his secret lair in the cloud.
+- **ArtifactArchive**: Stores artifacts or magical relics related to the project, such as images, diagrams, or documentation.
 - **EnchantmentChamber**: Contains scripts or files related to enchantments or magical enhancements applied to the codebase, such as build scripts or automation tools.
 - **src**: Golang source code to create a command-line binary with three riddles to unlock hidden knowledge.
 
 ## Get Started
 
 To embark on your coding adventure in GitHubmageLair, clone this repository to your local machine and explore the mystical artifacts within. May your code be enchanted and your commits be legendary!
+
+## Wiki and Cloud Security Tips
+
+Be sure to check out our Wiki for hints and tips on Cloud Security and more!
 
 ## Credits
 
