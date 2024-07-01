@@ -1,0 +1,15 @@
+----- BEGIN ARCANE MANIFESTO -----
+We, the GitHubmages of the Digital Realm, hereby decree:
+- Code is but a vessel for arcane incantations.
+- Bugs are manifestations of chaotic energies.
+- Comments are runes that guide the uninitiated.
+- Debugging is a ritual to appease the binary spirits.
+- Version control is the spellbook that binds our creations.
+- Documentation is the grimoire that shares our secrets.
+
+May the compilers be kind, and the tests be true.
+Let the pull requests flow like a river of mana.
+
+Signed,
+The Council of GitHubmages
+----- END ARCANE MANIFESTO -----
