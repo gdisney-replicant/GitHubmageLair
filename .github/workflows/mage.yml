@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: local
+    runs-on: self-hosted
     environment: prod
     steps:
       - name: Checkout code
